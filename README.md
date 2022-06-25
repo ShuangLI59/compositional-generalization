@@ -1,3 +1,3 @@
-# Compositionality-MIT
+# Learning how to Generalize
 
-https://energy-based-model.github.io/Compositionality-MIT/
+https://shuangli59.github.io/Learning-how-to-generalize/
