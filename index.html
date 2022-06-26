@@ -59,7 +59,7 @@
 		<p>A key aspect of human intelligence is the ability to learn increasingly complex concepts by synthesizing simple ideas, enabling both rapid learning and adaptation of knowledge. To unlock its full potential, AI must exhibit similar generalization abilities.</p>
 			<!-- We aim to teach AI systems to exhibit such generalization ability in different domains.  -->
 
-		<p>Our research into AI generalization explores two paradigms: 1) pre-training high-capacity models on massive unstructured data to achieve generalization from data, and 2) learning explicit compositional representations to enable generalization by composing different concepts. We hope our study on generalization will provide a possible solution for future AI systems to solve a wide range of real-world tasks.</p>
+		<p>Our research into AI generalization explores two paradigms: 1) training high-capacity models on massive unstructured data to achieve generalization from data, and 2) learning explicit compositional representations to enable generalization by composing different concepts. We hope our study on generalization will provide a possible solution for future AI systems to solve a wide range of real-world tasks.</p>
 		<!-- We hope our study on generalization will provide a possible solution for future AI systems to continually learn from the world by combining previously learned knowledge and new skills. -->
 		
 
@@ -79,7 +79,7 @@
 
 			<small><small>
 		  	<font color="black">Research Topics:
-		  		<a href="#learningdata" onclick="showPubs(2)">Learning from unstructured data</a> /
+		  		<a href="#learningdata" onclick="showPubs(2)">Learning from massive unstructured data</a> /
 		  		<a href="#learningexplicit" onclick="showPubs(2)">Learning explicit compositional representations</a>
 			</font><br>
 			</small></small>
@@ -101,7 +101,7 @@
 
 			
 			<div id="learningdata" style="padding-top: 80px; margin-top: -80px;">
-				<h5>Learning from unstructured data</h5>
+				<h5>Learning from massive unstructured data</h5>
 			</div>
 			<br>
 
@@ -138,11 +138,40 @@
 				</div>
 				<div class="col-md-12">
 				<br>
-				<p>We investigate the effectiveness of language modeling (LM) to scaffold learning and generalization in autonomous decision-making. We describe a framework for imitation learning in which goals and observations are represented as a sequence of embeddings, and translated into actions using a policy network initialized with a pre-trained transformer LM. We demonstrate that this framework enables effective combinatorial generalization across different environments and supervisory modalities. We begin by assuming access to a set of expert demonstrations, and show that initializing policies with LMs and fine-tuning them via behavior cloning improves task completion rates by 43.6% in the VirtualHome environment. We then examine how our framework may be used in environments without pre-collected expert data. To do this, we integrate an active data gathering procedure into pre-trained LMs. The agent iteratively learns by interacting with the environment, relabeling the language goal of past 'failed' experiences, and updating the policy in a self-supervised loop. The active data gathering procedure also enables effective combinatorial generalization, outperforming the best baseline by 25.1%. Finally, we explain these results by investigating three possible factors underlying the effectiveness of the LM-based policy. We find that sequential input representations (vs. fixed-dimensional feature vectors) and favorable weight initialization are both important for generalization. Surprisingly, however, the format of the policy inputs encoding (e.g. as a natural language string vs. an arbitrary sequential encoding) has little influence. Together, these results suggest that language modeling induces representations that are useful for modeling not just language, but also goals and plans.</p>
+				<p>We investigate the effectiveness of language modeling (LM) to scaffold learning and generalization in autonomous decision-making. We describe a framework for imitation learning in which goals and observations are represented as a sequence of embeddings, and translated into actions using a policy network initialized with a pre-trained transformer LM. We demonstrate that this framework enables effective combinatorial generalization across different environments and supervisory modalities. We explain these results by investigating three possible factors underlying the effectiveness of the LM-based policy. We find that sequential input representations (vs. fixed-dimensional feature vectors) and favorable weight initialization are both important for generalization. Surprisingly, however, the format of the policy inputs encoding (e.g. as a natural language string vs. an arbitrary sequential encoding) has little influence. Together, these results suggest that language modeling induces representations that are useful for modeling not just language, but also goals and plans.</p>
 				</div>
 			</div><hr>
 
 
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/21-iclr-watch-and-help/multiagent.gif" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Watch-And-Help: A Challenge for Social Perception and Human-AI Collaboration</font></b><br>
+				<a href="https://people.csail.mit.edu/xavierpuig/" target="_blank">Xavier Puig</a>,
+				<a href="https://www.tshu.io/" target="_blank">Tianmin Shu</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				<a href="" target="_blank">Zilin Wang</a>,
+				<a href="https://scholar.google.com/citations?user=rRJ9wTJMUB8C&hl=en" target="_blank">Joshua B. Tenenbaum</a>, 
+				<a href="https://www.cs.utoronto.ca/~fidler/" target="_blank">Sanja Fidler</a>, and
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>
+				<br>
+				<b><a href="https://iclr.cc" target="_blank">ICLR 2021</a>, <font color="firebrick">Spotlight</font> </b> <br>
+				<b><a href="https://www.cooperativeai.com/neurips-2020" target="_blank">NeurIPS Cooperative AI Workshop 2020</a>, <font color="firebrick">Best Paper Award</font> </b> <br>
+				<a href="http://virtual-home.org/watch_and_help/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/pdf/2010.09890.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/xavierpuigf/watch_and_help" target="_blank"> <small>[Code]</small></a>
+				<a href="https://www.youtube.com/watch?v=lrB4K2i8xPI&feature=youtu.be" target="_blank"> <small>[Video]</small></a>
+				<a href="http://virtual-home.org/" target="_blank"> <small>[VirtualHome]</small></a>
+				</div>
+				<div class="col-md-12">
+				<br>
+				<p>We introduce Watch-And-Help (WAH), a challenge for testing social intelligence in agents. In WAH, an AI agent needs to help a human-like agent perform a complex household task efficiently. To succeed, the AI agent needs to i) understand the underlying goal of the task by watching a single demonstration of the human-like agent performing the same task (social perception), and ii) coordinate with the human-like agent to solve the task in an unseen environment as fast as possible (human-AI collaboration). For this challenge, we build VirtualHome-Social, a multi-agent household environment, and provide a benchmark including both planning and learning based baselines. We evaluate the performance of AI agents with the human-like agent as well as with real humans using objective metrics and subjective user ratings. Experimental results demonstrate that the proposed challenge and virtual environment enable a systematic evaluation on the important aspects of machine social intelligence at scale.</p>
+				</div>
+			</div><hr>
 
 
 
