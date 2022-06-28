@@ -32,6 +32,9 @@
 		<div class="collapse navbar-collapse" id="navbarToggle">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
+					<a class="nav-link" href="https://people.csail.mit.edu/lishuang/">Main Page</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link" href="#Publications">Publications</a>
 				</li>
 				<li class="nav-item">
@@ -59,7 +62,7 @@
 		<p>A key aspect of human intelligence is the ability to learn increasingly complex concepts by synthesizing simple ideas, enabling both rapid learning and adaptation of knowledge. To unlock its full potential, AI must exhibit similar generalization abilities.</p>
 			<!-- We aim to teach AI systems to exhibit such generalization ability in different domains.  -->
 
-		<p>Our research into AI generalization explores two paradigms: 1) training high-capacity models on massive unstructured data to achieve generalization from data, and 2) learning explicit compositional representations to enable generalization by composing different concepts. We hope our study on generalization will provide a possible solution for future AI systems to solve a wide range of real-world tasks.</p>
+		<p>Our research into AI generalization explores two main paradigms: 1) training high-capacity models on massive unstructured data to achieve generalization from data, and 2) learning explicit compositional representations to enable generalization by composing different concepts. We hope our study on generalization will provide a possible solution for future AI systems to solve a wide range of real-world tasks.</p>
 		<!-- We hope our study on generalization will provide a possible solution for future AI systems to continually learn from the world by combining previously learned knowledge and new skills. -->
 		
 
@@ -80,7 +83,8 @@
 			<small><small>
 		  	<font color="black">Research Topics:
 		  		<a href="#learningdata" onclick="showPubs(2)">Learning from massive unstructured data</a> /
-		  		<a href="#learningexplicit" onclick="showPubs(2)">Learning explicit compositional representations</a>
+		  		<a href="#learningexplicit" onclick="showPubs(2)">Learning explicit compositional representations</a> /
+		  		<a href="#others" onclick="showPubs(2)">Others</a>
 			</font><br>
 			</small></small>
 		</h3>
@@ -172,7 +176,6 @@
 				<p>We introduce Watch-And-Help (WAH), a challenge for testing social intelligence in agents. In WAH, an AI agent needs to help a human-like agent perform a complex household task efficiently. To succeed, the AI agent needs to i) understand the underlying goal of the task by watching a single demonstration of the human-like agent performing the same task (social perception), and ii) coordinate with the human-like agent to solve the task in an unseen environment as fast as possible (human-AI collaboration). For this challenge, we build VirtualHome-Social, a multi-agent household environment, and provide a benchmark including both planning and learning based baselines. We evaluate the performance of AI agents with the human-like agent as well as with real humans using objective metrics and subjective user ratings. Experimental results demonstrate that the proposed challenge and virtual environment enable a systematic evaluation on the important aspects of machine social intelligence at scale.</p>
 				</div>
 			</div><hr>
-
 
 
 
@@ -274,7 +277,7 @@
 	            These energy functions can both represent global factors of variation, such as facial expression and hair color, as well
 	            as local factors of variations, such as the objects in a scene. Decomposed energy functions generalize well, and may be
 	            recombined with energy function discovered by training a separate instance of approach on a different dataset, enabling
-	            the recombination of objects and lighting conditions across datasets.
+	            the recombination of objects and lighting conditions across datasets.</p>
 				</div>
 			</div><hr>
 
@@ -297,10 +300,53 @@
 				</div>
 				<div class="col-md-12">
 				<br>
-				<p> A vital aspect of human intelligence is the ability to compose increasingly complex concepts out of simpler ideas, enabling both rapid learning and adaptation of knowledge. In this paper we show that energy-based models can exhibit this ability by directly combining probability distributions. Samples from the combined distribution correspond to compositions of concepts. For example, given one distribution for smiling face images, and another for male faces, we can combine them to generate smiling male faces. This allows us to generate natural images that simultaneously satisfy conjunctions, disjunctions, and negations of concepts. We evaluate compositional generation abilities of our model on the CelebA dataset of natural faces and synthetic 3D scene images. We showcase the breadth of unique capabilities of our model, such as the ability to continually learn and incorporate new concepts, or infer compositions of concept properties underlying an image. 
+				<p> A vital aspect of human intelligence is the ability to compose increasingly complex concepts out of simpler ideas, enabling both rapid learning and adaptation of knowledge. In this paper we show that energy-based models can exhibit this ability by directly combining probability distributions. Samples from the combined distribution correspond to compositions of concepts. For example, given one distribution for smiling face images, and another for male faces, we can combine them to generate smiling male faces. This allows us to generate natural images that simultaneously satisfy conjunctions, disjunctions, and negations of concepts. We evaluate compositional generation abilities of our model on the CelebA dataset of natural faces and synthetic 3D scene images. We showcase the breadth of unique capabilities of our model, such as the ability to continually learn and incorporate new concepts, or infer compositions of concept properties underlying an image. </p>
 				</div>
 			</div><hr>
 
+
+
+	
+
+			<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+		
+
+			<br>
+			<div id="others" style="padding-top: 80px; margin-top: -80px;">
+				<h5>Others</h5>
+			</div><br>
+
+			<p>We find that contrastive learning and test-time optimization also contribute to generalization of tasks that are outside the training distribution.<p>
+			<br>
+
+			
+
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/21-nerf-dy/nerf-dy.gif" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">3D Neural Scene Representations for Visuomotor Control</font></b><br>
+				<a href="https://people.csail.mit.edu/liyunzhu/" target="_blank">Yunzhu Li*</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li*</b></u></a>,
+				<a href="https://vsitzmann.github.io/" target="_blank">Vincent Sitzmann</a>, 
+				<a href="https://people.csail.mit.edu/pulkitag/" target="_blank">Pulkit Agrawal</a>, and
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>
+				(*equal contribution)
+                <br>
+				<b><a href="https://www.robot-learning.org/" target="_blank">CoRL 2021</a>, <font color="firebrick">Oral</font> </b> <br>
+				<b><a href="https://rssvlrr.github.io/" target="_blank">RSS Visual Learning and Reasoning for Robotics Workshop 2021</a></b> <br>
+				<a href="https://3d-representation-learning.github.io/nerf-dy/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/abs/2107.04004" target="_blank"> <small>[Paper]</small></a>
+				<a href="" target="_blank"> <small>[Code]</small></a>
+				</div>
+				<div class="col-md-12">
+				<br>
+				<p> We aim to learn models for dynamic 3D scenes purely from 2D visual observations. Our model combines Neural Radiance Fields (NeRF) and time contrastive learning with an autoencoding framework, which learns viewpoint-invariant 3D-aware scene representations. We show that a dynamics model, constructed over the learned representation space, enables visuomotor control for challenging manipulation tasks involving both rigid bodies and fluids, where the target is specified in a viewpoint different from what the robot operates on. When coupled with an auto-decoding framework, it can even support goal specification from camera viewpoints that are outside the training distribution.</p>
+				</div>
+			</div><hr>
 
 
 
@@ -325,12 +371,12 @@
 				</div>
 				<div class="col-md-12">
 				<br>
-				<p> We introduce the task of weakly supervised learning for detecting human and object interactions in videos. Our task poses unique challenges as a system does not know what types of human-object interactions are present in a video or the actual spatiotemporal location of the human and the object. To address these challenges, we introduce a contrastive weakly supervised training loss that aims to jointly associate spatiotemporal regions in a video with an action and object vocabulary and encourage temporal continuity of the visual appearance of moving objects as a form of self-supervision. It allows detecting rare and unseen human-object interactions in a zero-shot manner. We demonstrate improved performance over weakly supervised baselines adapted to our task on our video dataset. 
+				<p> We introduce the task of weakly supervised learning for detecting human and object interactions in videos. Our task poses unique challenges as a system does not know what types of human-object interactions are present in a video or the actual spatiotemporal location of the human and the object. To address these challenges, we introduce a contrastive weakly supervised training loss that aims to jointly associate spatiotemporal regions in a video with an action and object vocabulary and encourage temporal continuity of the visual appearance of moving objects as a form of self-supervision. It allows detecting rare and unseen human-object interactions in a zero-shot manner. We demonstrate improved performance over weakly supervised baselines adapted to our task on our video dataset.</p>
 				</div>
 			</div><hr>
 
 
-	
+
 		</script>
 
 
